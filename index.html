@@ -1,12 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Development</title>
-  </head>
-  <body>
-    this is for web dev projects
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Airways </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <div>
+          <a href="index.html">
+            <img src="/photo/airways.png" alt="logo" class="logo" />
+          </a>
+          <div class="menu">
+            <ul>
+              <li><a href="#top">Home</a></li>
+              <li><a href="#footer">Contact Us</a></li>
+              <li> <a href="#about">About</a></li>
+              <li> <a href="#services">Our services</a></li>
+            </ul>
+          </div>
+          <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <div>
+        <h1>
+          Welcome <br>
+          TO <br>
+          Airways <br>
+          <span>Ready to take off</span>
+        </h1>
+        <img src="/photo/plane image.png" width="200" alt="image">
+        <a class="btn " href="#">
+          Learn MOre
+        </a>
+        <section>
+          <a href="#services" class="down-arrow">
+            <i class="fas fa-arrow-down"></i>
+          </a>
+        </section>
+      </div>
+    </div>
+  </header>
+  <section id="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="/photo/plane image.png" width="200" alt="About us">
+      </div>
+      <div class="about-text">
+        <h2>About us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+    </div>
+  </section>
+
+  <div>
+    <h1>
+      Our services
+    </h1>
+  </div>
+  <section id="services">
+    <div class="container">
+      <div class="services">
+        <div class="service-card">
+          <h3>Service 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat
+            volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+        </div>
+        <div class="service-card">
+          <h3>Service 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat
+            volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+        </div>
+        <div class="service-card">
+          <h3>Service 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat
+            volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+        </div>
+      </div>
+  </section>
+  <section class="contact">
+    <div class="heading">
+      <h1 class="">
+        Want to book ticket?
+      </h1>
+    </div>
+  </section>
+  </section>
+  <footer id="footer">
+    <section class="contact us">
+      <h1>Contact Us</h1>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Contact</label>
+          <input type="text" id="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Reason for contact</label>
+          <input type="text" id="subject" required>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- Success alert -->
+      <div id="alert" class="alert alert-success" style="display: none;">
+        Your message has been sent successfully!
+      </div>
+
+    </section>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+
 </html>
